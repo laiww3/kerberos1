@@ -36,7 +36,7 @@ namespace Kerberos
             if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"),"sea", get_book_name(), get_H_IDc(),w1.get_key_c_v())) == 1)
             {
           //      System.Windows.MessageBox.Show(textbox1.Text);
-                System.Windows.MessageBox.Show("发送消息成功！");
+            //    System.Windows.MessageBox.Show("发送消息成功！");
             }
             rec_msg1();
         }
@@ -112,7 +112,7 @@ ue>
             textbox2.Text = "";
             if (send_msg(message.Enc_msg9(w.get_IDc(),get_H_IDc(),w1.get_key_c_v())) == 1)
             {
-                System.Windows.MessageBox.Show("发送消息成功！");
+              //  System.Windows.MessageBox.Show("发送消息成功！");
             }
             rec_msg2();
         }
@@ -161,7 +161,7 @@ ue>
              //   System.Windows.MessageBox.Show(d4.data2_TS2);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", d4.data2_TS2, get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
-                    System.Windows.MessageBox.Show("发送消息成功！");
+                 //   System.Windows.MessageBox.Show("发送消息成功！");
                     textbox2.Text = "";
                     rec_msg3();
                 }              
@@ -171,7 +171,7 @@ ue>
            //     System.Windows.MessageBox.Show(d4.data2_Lifetime1);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", d4.data2_Lifetime1, get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
-                    System.Windows.MessageBox.Show("发送消息成功！");
+                //    System.Windows.MessageBox.Show("发送消息成功！");
                     textbox2.Text = "";
                     rec_msg3();
                 }
@@ -182,7 +182,7 @@ ue>
             //    System.Windows.MessageBox.Show(d4.data2_key_c_tgs);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", d4.data2_key_c_tgs, get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
-                    System.Windows.MessageBox.Show("发送消息成功！");
+                 //   System.Windows.MessageBox.Show("发送消息成功！");
                     textbox2.Text = "";
                     rec_msg3();
                 }           
@@ -192,7 +192,7 @@ ue>
               //  System.Windows.MessageBox.Show(d4.data2_key_c_tgs);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", get_book_name(), get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
-                    System.Windows.MessageBox.Show("发送消息成功！");
+                //    System.Windows.MessageBox.Show("发送消息成功！");
                     textbox2.Text = "";
                     rec_msg3();
                 }
