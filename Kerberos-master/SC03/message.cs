@@ -152,7 +152,7 @@ namespace Kerberos
             message result1 = new message();
             result1.type = "07";
             result1.m_data = result.d_tag+result.data7_IDc+result.data7_TS7+result.data7_oper+result.data7_d7_tag2+ result.data7_book_name+result.data7_d7_tag+result.data7_H_IDc+"####";
-            string str = result1.type + result1.m_pwd +"####"+ des.EncryptString(result1.m_data,key)+"####";
+            string str = result1.type + result1.m_pwd + result.data7_IDc + "####"+ des.EncryptString(result1.m_data,key)+"####";
             return str;
         }
         public static  string Enc_msg9(string IDc,string H_IDc,string key)
@@ -164,7 +164,7 @@ namespace Kerberos
             message result1 = new message();
             result1.type = "09";
             result1.m_data = result.d_tag + result.data11_IDc +"ref"+"####"+ result.data11_H_IDc+"####";
-            string str = result1.type + result1.m_pwd + des.EncryptString(result1.m_data,key)+"####";
+            string str = result1.type + result1.m_pwd + result.data11_IDc + des.EncryptString(result1.m_data,key)+"####";
             return str;
         }
         public static string Enc_msg13(string IDc,string pwd)
