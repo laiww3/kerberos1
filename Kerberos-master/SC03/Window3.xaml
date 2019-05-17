@@ -19,6 +19,7 @@
             <ComboBoxItem Name="item1"   Height="20" Width="100"/>
             <ComboBoxItem Name="item2"   Height="20" Width="100"/>
             <ComboBoxItem Name="item3"   Height="20" Width="100"/>
+            <ComboBoxItem Name="item4" Content=""  Height="20" Width="100"/>
         </ComboBox>
     </Grid>
 </Window>

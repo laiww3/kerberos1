@@ -158,6 +158,7 @@ ue>
         {
             if (combobox1.Text.Equals(d4.data2_TS2))
             {
+             //   System.Windows.MessageBox.Show(d4.data2_TS2);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", d4.data2_TS2, get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
                     System.Windows.MessageBox.Show("发送消息成功！");
@@ -167,6 +168,7 @@ ue>
             }
             else if (combobox1.Text.Equals(d4.data2_Lifetime1))
             {
+           //     System.Windows.MessageBox.Show(d4.data2_Lifetime1);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", d4.data2_Lifetime1, get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
                     System.Windows.MessageBox.Show("发送消息成功！");
@@ -177,6 +179,7 @@ ue>
             }
             else if (combobox1.Text.Equals(d4.data2_key_c_tgs))
             {
+            //    System.Windows.MessageBox.Show(d4.data2_key_c_tgs);
                 if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", d4.data2_key_c_tgs, get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
                     System.Windows.MessageBox.Show("发送消息成功！");
@@ -186,7 +189,8 @@ ue>
             }
              else  if (get_book_name() != "")
             {
-               if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", get_book_name(), get_H_IDc(), w1.get_key_c_v())) == 1)
+              //  System.Windows.MessageBox.Show(d4.data2_key_c_tgs);
+                if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), "rea", get_book_name(), get_H_IDc(), w1.get_key_c_v())) == 1)
                 {
                     System.Windows.MessageBox.Show("发送消息成功！");
                     textbox2.Text = "";
