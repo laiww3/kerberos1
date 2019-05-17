@@ -121,7 +121,7 @@ namespace Kerberos
             result.data3_Aut_c = Aut_c;
             message result1 = new message();
             result1.type = "03";
-            result1.m_data = result.d_tag+result.data3_IDv+ result.data3_tkt_tgs+result.data3_d3_tag+result.data3_Aut_c;
+            result1.m_data = result.d_tag+result.data3_IDv+ result.data3_tkt_tgs+result.data3_d3_tag+result.data3_Aut_c+"####";
             string str = result1.type  + result1.m_pwd +result1.m_data;
             return str;
         }

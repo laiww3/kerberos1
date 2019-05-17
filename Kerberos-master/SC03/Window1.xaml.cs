@@ -55,10 +55,10 @@ namespace Kerberos
         private void button_click2(object sender, RoutedEventArgs e)//生成Aut
         {
             TS5 = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
-            System.Windows.MessageBox.Show(w.get_IDc());
+     //       System.Windows.MessageBox.Show(w.get_IDc());
             string str = w.get_IDc() +"####"+ GetLocalIP()+"####" + TS5+"   ";
             textbox4.Text = des.EncryptString(str, w.get_key_c_tgs());
-            System.Windows.MessageBox.Show(GetLocalIP());
+     //       System.Windows.MessageBox.Show(GetLocalIP());
         }
         private string GetLocalIP()
         {
@@ -89,7 +89,7 @@ namespace Kerberos
 
         private void button_click3(object sender, RoutedEventArgs e)
         {
-            System.Windows.MessageBox.Show(textbox1.Text);
+        //    System.Windows.MessageBox.Show(textbox1.Text);
             if (send_msg(message.Enc_msg3("SER", w.get_tkt_tgs(), textbox4.Text)) == 1)
             {
                 System.Windows.MessageBox.Show("发送消息成功！");

@@ -35,7 +35,7 @@ namespace Kerberos
         {
             if (send_msg(message.Enc_msg7(w.get_IDc(), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"),"sea", get_book_name(), get_H_IDc(),w1.get_key_c_v())) == 1)
             {
-                System.Windows.MessageBox.Show(textbox1.Text);
+          //      System.Windows.MessageBox.Show(textbox1.Text);
                 System.Windows.MessageBox.Show("发送消息成功！");
             }
             rec_msg1();
@@ -143,9 +143,9 @@ ue>
 "))
             { 
                 textbox3.AppendText("签名验证成功！");
-                System.Windows.MessageBox.Show(d4.data2_TS2);
-                System.Windows.MessageBox.Show(d4.data2_Lifetime1);
-                System.Windows.MessageBox.Show(d4.data2_key_c_tgs);
+         //       System.Windows.MessageBox.Show(d4.data2_TS2);
+          //      System.Windows.MessageBox.Show(d4.data2_Lifetime1);
+          //      System.Windows.MessageBox.Show(d4.data2_key_c_tgs);
                 item1.Content = d4.data2_TS2;
                 item2.Content = d4.data2_Lifetime1;
                 item3.Content = d4.data2_key_c_tgs;
